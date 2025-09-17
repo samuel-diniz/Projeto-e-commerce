@@ -48,3 +48,44 @@ No* inserirPorPreco(No* raiz, Produto p){
         raiz->dir = inserirPorPreco(raiz->dir, p);
     return raiz;
 }
+
+Produto* buscarPorCodigo(No* raiz, int codigo){
+    if (raiz == NULL) return NULL;
+    if (codigo == raiz->item.codigo)
+        return &raiz->item;
+    if (codigo < raiz->item.codigo)
+        return buscarPorCodigo(raiz->esq, codigo);
+    else
+        return buscarPorCodigo(raiz->dir, codigo);
+}
+
+void comprarProduto(No** arvoreCodigo, No** carrinho, int codigo){
+    Produto* p = buscarPorCodigo(*arvoreCodigo, codigo);
+    if (p != NULL && p->quantidade > 0) {
+        p->quantidade--;
+        *carrinho = inserirPorCodigo(*carrinho, *p);
+    }
+}
+
+int main(){
+    No *arvoreCodigo = NULL, *arvorePreco = NULL, *carrinho = NULL;
+    int totalProdutos = 10000;
+
+    for (int i = 1; i <= totalProdutos; i++){
+        char nome[50];
+        gerarNome(nome, i);
+        Produto p = criarProduto(
+            i, nome, (rand() % 10000) / 100.0, rand() % 50 + 1
+        );
+        arvoreCodigo = inserirPorCodigo(arvoreCodigo, p);
+        arvorePreco = inserirPorPreco(arvoreCodigo, p);
+    }
+
+    for (int i = 0; i < 500; i++){
+        int codigoCompra = rand() % totalProdutos + 1;
+        comprarProduto(&arvoreCodigo, &carrinho, codigoCompra);
+    }
+    
+
+    return 0;
+}
