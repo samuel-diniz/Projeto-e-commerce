@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <time.h> 
 
 typedef struct Produto{
     int codigo;
@@ -59,6 +60,21 @@ Produto* buscarPorCodigo(No* raiz, int codigo){
         return buscarPorCodigo(raiz->dir, codigo);
 }
 
+void listarProduto(No* raiz){
+    if (raiz != NULL){
+        listarProduto(raiz->esq);
+        printf("Código: %d\n", raiz->item.codigo);
+        listarProduto(raiz->dir);
+    }
+}
+
+int altura(No*raiz) {
+    if (raiz == NULL) return 0;
+    int altEsq = altura(raiz->esq);
+    int altDir = altura(raiz->dir);
+    return (altEsq > altDir ? altEsq : altDir) + 1;
+}
+
 void comprarProduto(No** arvoreCodigo, No** carrinho, int codigo){
     Produto* p = buscarPorCodigo(*arvoreCodigo, codigo);
     if (p != NULL && p->quantidade > 0) {
@@ -67,25 +83,49 @@ void comprarProduto(No** arvoreCodigo, No** carrinho, int codigo){
     }
 }
 
+void devolverProduto(No*arvoreCodigo, No** carrinho, int codigo){
+    Produto* p = buscarPorCodigo(arvoreCodigo, codigo);
+    Produto* c = buscarPorCodigo(*carrinho, codigo);
+    if (p != NULL && c != NULL){
+        p->quantidade++;
+    }
+}
+
+void gerarNome(char* nome, int id){
+    sprintf(nome, "Produto_%d", id);
+}
+
 int main(){
+
+    srand(time(NULL)); 
+
     No *arvoreCodigo = NULL, *arvorePreco = NULL, *carrinho = NULL;
     int totalProdutos = 10000;
 
-    for (int i = 1; i <= totalProdutos; i++){
+    for (int i = 1; i <= totalProdutos; i++) {
         char nome[50];
         gerarNome(nome, i);
+        
+        int codigoAleatorio = rand() % (totalProdutos*10);
+        float precoAleatorio = (rand() % 10000) / 100.0;
+        int quantidadeAleatoria = rand() % 50 + 1;
+
         Produto p = criarProduto(
-            i, nome, (rand() % 10000) / 100.0, rand() % 50 + 1
+            codigoAleatorio, nome, precoAleatorio, quantidadeAleatoria
         );
+        
         arvoreCodigo = inserirPorCodigo(arvoreCodigo, p);
-        arvorePreco = inserirPorPreco(arvoreCodigo, p);
+        arvorePreco = inserirPorPreco(arvorePreco, p);
     }
+    printf("Altura da arvore por codigo: %d\n", altura(arvoreCodigo));
+    printf("Altura da arvore por preco: %d\n",altura(arvorePreco));
 
     for (int i = 0; i < 500; i++){
         int codigoCompra = rand() % totalProdutos + 1;
         comprarProduto(&arvoreCodigo, &carrinho, codigoCompra);
     }
     
+    printf("Altura da arvore do carrinho: %d\n", altura(carrinho));
 
     return 0;
 }
