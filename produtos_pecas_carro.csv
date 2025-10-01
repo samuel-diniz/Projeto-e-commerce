@@ -1,0 +1,801 @@
+codigo,nome,preco,quantidade
+1,Bateria 1,2627.08,40
+2,Condensador 2,300.12,50
+3,Servo Freio 3,4127.91,27
+4,Parachoque Traseiro 4,412.15,38
+5,Motor de Partida 5,2721.38,12
+6,Sensor de Temperatura 6,525.71,41
+7,Bicos Injetores 7,699.93,13
+8,Coxim do Motor 8,4939.5,16
+9,Velas de Ignição 9,556.61,41
+10,Amortecedor 10,4669.63,39
+11,Interruptor de Luz de Freio 11,795.42,15
+12,Filtro de Combustível 12,1970.76,31
+13,Bomba de Combustível 13,1215.37,36
+14,Sensor ABS 14,4093.09,26
+15,Filtro de Óleo 15,3351.71,34
+16,Servo Freio 16,1928.03,34
+17,Módulo de Injeção 17,4566.0,24
+18,Sensor de Posição 18,3648.65,18
+19,Pneu 19,4370.62,7
+20,Interruptor de Ignição 20,4657.2,29
+21,Radiador 21,3521.38,40
+22,Interruptor de Ignição 22,4247.41,32
+23,Sensor ABS 23,4714.04,13
+24,Velas de Ignição 24,3905.66,24
+25,Kit Embreagem 25,4894.26,47
+26,Interruptor de Luz de Freio 26,3760.76,1
+27,Catalisador 27,2616.38,40
+28,Suspensão Dianteira 28,3671.83,23
+29,Sensor de Pressão 29,1333.61,12
+30,Parabrisa 30,2672.27,46
+31,Bomba de Combustível 31,2459.95,34
+32,Catalisador 32,1623.03,39
+33,Cilindro Mestre de Freio 33,900.07,26
+34,Filtro de Óleo 34,4289.23,48
+35,Sensor ABS 35,1318.85,3
+36,Kit Embreagem 36,758.76,49
+37,Filtro de Combustível 37,3533.79,43
+38,Correia Alternador 38,3346.51,15
+39,Bicos Injetores 39,3088.78,22
+40,Suspensão Dianteira 40,1086.48,39
+41,Coxim do Motor 41,199.35,14
+42,Sensor de Posição 42,515.32,4
+43,Módulo de Injeção 43,1342.35,39
+44,Módulo de Injeção 44,1579.69,16
+45,Condensador 45,4916.96,6
+46,Sensor de Temperatura 46,2565.14,25
+47,Correia Alternador 47,706.08,6
+48,Módulo de Injeção 48,998.71,2
+49,Bomba Hidráulica 49,3061.36,30
+50,Volante do Motor 50,858.92,42
+51,Kit Embreagem 51,4909.53,39
+52,Bomba D'água 52,673.57,26
+53,Filtro de Óleo 53,2750.44,38
+54,Radiador do Ar Condicionado 54,685.17,1
+55,Sensor de Temperatura 55,2051.41,43
+56,Farol Dianteiro 56,4572.56,46
+57,Bomba de Combustível 57,4866.53,19
+58,Mangueira do Radiador 58,3534.54,34
+59,Cilindro Mestre de Freio 59,3948.67,39
+60,Filtro de Combustível 60,4567.31,14
+61,Servo Freio 61,4844.52,32
+62,Filtro de Ar 62,1830.42,19
+63,Alternador 63,2529.13,36
+64,Bateria 64,3751.74,7
+65,Parachoque Traseiro 65,4206.67,45
+66,Filtro de Cabine 66,282.09,37
+67,Parachoque Dianteiro 67,154.71,27
+68,Sensor de Oxigênio 68,928.75,43
+69,Escapamento 69,3183.13,10
+70,Servo Freio 70,3853.87,47
+71,Parachoque Dianteiro 71,4356.73,8
+72,Filtro de Óleo 72,4250.37,22
+73,Correia Dentada 73,978.71,33
+74,Lanterna Traseira 74,3107.23,44
+75,Escapamento 75,2781.38,42
+76,Reservatório de Expansão 76,3318.14,29
+77,Filtro de Ar 77,2611.93,15
+78,Interruptor de Luz de Freio 78,559.45,23
+79,Interruptor de Luz de Freio 79,737.0,22
+80,Cilindro Mestre de Freio 80,4588.47,28
+81,Velas de Ignição 81,3133.44,3
+82,Parabrisa 82,1827.89,21
+83,Sensor de Oxigênio 83,2568.56,42
+84,Pastilha de Freio 84,4033.62,34
+85,Catalisador 85,3983.38,13
+86,Volante do Motor 86,237.48,2
+87,Compressor de Ar Condicionado 87,2439.33,22
+88,Servo Freio 88,1091.51,25
+89,Velas de Ignição 89,4032.08,29
+90,Suspensão Traseira 90,3094.03,50
+91,Correia Alternador 91,3200.95,22
+92,Cilindro Mestre de Freio 92,1195.04,32
+93,Motor de Partida 93,3773.46,21
+94,Parabrisa 94,2947.41,30
+95,Reservatório de Expansão 95,1134.41,30
+96,Pneu 96,4630.18,9
+97,Interruptor de Luz de Freio 97,3515.67,46
+98,Pneu 98,2588.87,26
+99,Parachoque Traseiro 99,2052.82,46
+100,Parachoque Dianteiro 100,2308.12,39
+101,Disco de Freio 101,290.52,50
+102,Filtro de Óleo 102,2847.66,48
+103,Disco de Freio 103,2371.1,47
+104,Interruptor de Ignição 104,1546.64,48
+105,Reservatório de Expansão 105,3224.59,10
+106,Radiador do Ar Condicionado 106,2286.79,49
+107,Volante do Motor 107,4674.08,1
+108,Interruptor de Ignição 108,3316.05,42
+109,Suspensão Traseira 109,548.56,42
+110,Sensor de Temperatura 110,2557.29,30
+111,Mangueira do Radiador 111,1744.43,40
+112,Alternador 112,3147.31,26
+113,Radiador 113,877.66,36
+114,Lanterna Traseira 114,4667.97,19
+115,Bomba D'água 115,3934.14,36
+116,Bicos Injetores 116,233.18,38
+117,Interruptor de Luz de Freio 117,485.69,46
+118,Parabrisa 118,3803.68,43
+119,Pneu 119,3174.41,30
+120,Bomba Hidráulica 120,3716.19,11
+121,Chicote Elétrico 121,3226.76,14
+122,Parachoque Traseiro 122,1849.98,21
+123,Suspensão Dianteira 123,1671.12,10
+124,Sensor ABS 124,4104.12,32
+125,Motor de Partida 125,328.85,9
+126,Compressor de Ar Condicionado 126,4737.68,50
+127,Radiador 127,3625.83,21
+128,Suspensão Dianteira 128,2482.41,33
+129,Disco de Freio 129,2750.43,8
+130,Bomba de Combustível 130,250.07,11
+131,Kit Embreagem 131,2256.56,46
+132,Correia Alternador 132,2469.67,14
+133,Cilindro Mestre de Freio 133,3169.16,14
+134,Bomba Hidráulica 134,2001.14,5
+135,Sensor ABS 135,4103.44,28
+136,Alternador 136,4692.95,12
+137,Filtro de Combustível 137,2031.67,22
+138,Radiador do Ar Condicionado 138,4794.45,45
+139,Bomba D'água 139,3290.83,6
+140,Velas de Ignição 140,2997.41,45
+141,Amortecedor 141,4683.14,31
+142,Amortecedor 142,2491.26,29
+143,Sensor de Pressão 143,1560.02,20
+144,Bomba D'água 144,3043.8,5
+145,Escapamento 145,844.14,6
+146,Sensor de Temperatura 146,2931.13,17
+147,Bicos Injetores 147,842.79,31
+148,Bomba Hidráulica 148,1409.42,18
+149,Filtro de Cabine 149,3527.48,41
+150,Sensor de Posição 150,217.67,48
+151,Disco de Freio 151,3385.67,29
+152,Motor de Partida 152,3405.83,17
+153,Alternador 153,4812.87,11
+154,Sensor de Temperatura 154,1890.63,21
+155,Parachoque Traseiro 155,2840.62,29
+156,Filtro de Óleo 156,2865.83,28
+157,Sensor de Oxigênio 157,2197.26,6
+158,Kit Embreagem 158,2821.99,29
+159,Filtro de Cabine 159,2214.33,36
+160,Escapamento 160,2952.73,27
+161,Coxim do Motor 161,1162.55,11
+162,Suspensão Dianteira 162,352.26,42
+163,Velas de Ignição 163,1987.82,29
+164,Estepe 164,1172.48,5
+165,Bomba D'água 165,1150.88,39
+166,Velas de Ignição 166,2862.29,44
+167,Bicos Injetores 167,4460.08,5
+168,Bomba de Combustível 168,790.1,18
+169,Filtro de Óleo 169,2486.27,50
+170,Bomba de Combustível 170,2138.73,1
+171,Condensador 171,1740.12,10
+172,Estepe 172,1348.61,26
+173,Bateria 173,1692.12,7
+174,Bomba D'água 174,3874.86,18
+175,Suspensão Dianteira 175,608.04,16
+176,Interruptor de Ignição 176,3994.48,33
+177,Coxim do Motor 177,4021.12,47
+178,Bicos Injetores 178,2700.75,20
+179,Sensor de Oxigênio 179,3685.21,47
+180,Correia Dentada 180,957.56,14
+181,Bomba de Combustível 181,365.51,30
+182,Correia Dentada 182,2955.66,19
+183,Escapamento 183,4836.78,44
+184,Alternador 184,396.54,46
+185,Reservatório de Expansão 185,4408.92,33
+186,Sensor de Posição 186,1057.54,10
+187,Sensor de Oxigênio 187,4062.28,44
+188,Filtro de Combustível 188,2201.94,45
+189,Servo Freio 189,3123.86,29
+190,Velas de Ignição 190,4154.52,22
+191,Compressor de Ar Condicionado 191,4368.88,48
+192,Reservatório de Expansão 192,4185.94,9
+193,Bateria 193,4247.25,4
+194,Alternador 194,1601.89,48
+195,Reservatório de Expansão 195,3308.31,41
+196,Sensor de Pressão 196,2521.53,37
+197,Estepe 197,762.82,34
+198,Bomba Hidráulica 198,1039.73,35
+199,Disco de Freio 199,2999.53,20
+200,Módulo de Injeção 200,3072.36,30
+201,Correia Alternador 201,4557.03,31
+202,Bomba de Combustível 202,4954.58,44
+203,Kit Embreagem 203,4018.14,23
+204,Módulo de Injeção 204,1699.35,49
+205,Bomba de Combustível 205,3169.68,24
+206,Pastilha de Freio 206,4060.11,17
+207,Sensor ABS 207,3863.43,19
+208,Suspensão Traseira 208,941.22,41
+209,Filtro de Cabine 209,4493.59,21
+210,Parabrisa 210,171.94,4
+211,Filtro de Óleo 211,3804.06,38
+212,Bateria 212,4886.79,42
+213,Volante do Motor 213,144.8,13
+214,Filtro de Combustível 214,1644.3,33
+215,Lanterna Traseira 215,3276.06,48
+216,Sensor de Posição 216,589.88,35
+217,Disco de Freio 217,3902.47,11
+218,Kit Embreagem 218,1863.71,50
+219,Bomba Hidráulica 219,4570.78,22
+220,Interruptor de Ignição 220,4940.05,45
+221,Volante do Motor 221,4539.12,28
+222,Retrovisor 222,504.27,45
+223,Filtro de Óleo 223,2514.81,1
+224,Reservatório de Expansão 224,3052.24,40
+225,Sensor ABS 225,2946.31,42
+226,Disco de Freio 226,3073.79,40
+227,Volante do Motor 227,3592.19,21
+228,Filtro de Cabine 228,1530.88,16
+229,Sensor ABS 229,2505.22,7
+230,Radiador 230,2658.37,21
+231,Bomba de Combustível 231,829.13,16
+232,Interruptor de Ignição 232,2212.56,44
+233,Sensor de Pressão 233,4944.45,7
+234,Cilindro Mestre de Freio 234,2056.32,28
+235,Correia Alternador 235,1614.09,49
+236,Servo Freio 236,545.47,49
+237,Bomba D'água 237,3106.12,7
+238,Retrovisor 238,1922.82,36
+239,Volante do Motor 239,1180.55,47
+240,Reservatório de Expansão 240,83.18,10
+241,Escapamento 241,4914.01,19
+242,Filtro de Cabine 242,2572.41,27
+243,Interruptor de Ignição 243,2561.95,31
+244,Amortecedor 244,1116.57,33
+245,Bicos Injetores 245,1661.24,48
+246,Bomba D'água 246,3834.35,47
+247,Sensor ABS 247,3708.72,36
+248,Módulo de Injeção 248,1310.8,36
+249,Correia Alternador 249,2305.35,42
+250,Bomba D'água 250,404.99,34
+251,Motor de Partida 251,2205.72,7
+252,Radiador 252,2333.49,48
+253,Cilindro Mestre de Freio 253,1290.92,42
+254,Retrovisor 254,906.7,19
+255,Sensor de Posição 255,977.8,2
+256,Filtro de Cabine 256,2657.63,13
+257,Farol Dianteiro 257,4804.52,34
+258,Bomba D'água 258,4384.83,25
+259,Interruptor de Ignição 259,2533.3,29
+260,Motor de Partida 260,3148.86,10
+261,Bomba de Combustível 261,1414.81,50
+262,Motor de Partida 262,120.91,28
+263,Alternador 263,4165.53,18
+264,Volante do Motor 264,3970.52,47
+265,Radiador do Ar Condicionado 265,1079.02,4
+266,Filtro de Cabine 266,3806.88,8
+267,Escapamento 267,4205.8,17
+268,Estepe 268,3633.53,21
+269,Lanterna Traseira 269,481.71,29
+270,Radiador 270,1971.81,50
+271,Bomba D'água 271,1161.0,25
+272,Kit Embreagem 272,1472.02,11
+273,Parabrisa 273,4488.18,7
+274,Motor de Partida 274,4493.52,12
+275,Compressor de Ar Condicionado 275,2925.07,38
+276,Estepe 276,1119.02,15
+277,Filtro de Óleo 277,3433.99,25
+278,Motor de Partida 278,502.76,12
+279,Bomba de Combustível 279,3953.55,9
+280,Suspensão Traseira 280,2822.36,27
+281,Pastilha de Freio 281,2415.64,14
+282,Bomba de Combustível 282,2226.98,25
+283,Disco de Freio 283,1731.38,26
+284,Bomba Hidráulica 284,1552.98,8
+285,Sensor ABS 285,3810.91,22
+286,Velas de Ignição 286,663.45,9
+287,Alternador 287,2866.06,27
+288,Catalisador 288,618.24,42
+289,Sensor de Pressão 289,4331.76,23
+290,Correia Dentada 290,2078.13,47
+291,Kit Embreagem 291,2437.0,13
+292,Radiador 292,2463.72,29
+293,Sensor de Pressão 293,2867.57,46
+294,Reservatório de Expansão 294,4323.04,23
+295,Retrovisor 295,1785.29,40
+296,Cilindro Mestre de Freio 296,2475.24,30
+297,Alternador 297,1444.94,45
+298,Reservatório de Expansão 298,735.02,47
+299,Bomba D'água 299,1380.52,1
+300,Bomba D'água 300,3224.99,29
+301,Reservatório de Expansão 301,4097.38,8
+302,Filtro de Combustível 302,3141.61,26
+303,Servo Freio 303,289.37,40
+304,Pneu 304,198.23,5
+305,Pastilha de Freio 305,1875.76,40
+306,Servo Freio 306,3477.66,15
+307,Alternador 307,3532.86,33
+308,Compressor de Ar Condicionado 308,1874.48,15
+309,Catalisador 309,4127.66,28
+310,Bomba D'água 310,1010.04,12
+311,Alternador 311,4238.84,31
+312,Escapamento 312,1830.69,43
+313,Amortecedor 313,4301.42,35
+314,Sensor de Temperatura 314,4550.32,28
+315,Catalisador 315,338.5,31
+316,Sensor de Pressão 316,4950.21,13
+317,Bicos Injetores 317,1675.51,29
+318,Disco de Freio 318,3319.15,22
+319,Retrovisor 319,4121.59,31
+320,Parabrisa 320,1486.13,17
+321,Módulo de Injeção 321,4363.42,48
+322,Filtro de Cabine 322,2534.02,11
+323,Pneu 323,4938.72,9
+324,Chicote Elétrico 324,2314.6,32
+325,Bateria 325,4848.07,41
+326,Filtro de Ar 326,1991.43,22
+327,Farol Dianteiro 327,4443.73,15
+328,Bomba Hidráulica 328,218.56,22
+329,Amortecedor 329,1847.91,17
+330,Sensor de Temperatura 330,4703.21,22
+331,Alternador 331,1579.22,17
+332,Alternador 332,2361.16,11
+333,Motor de Partida 333,3464.67,19
+334,Mangueira do Radiador 334,495.0,23
+335,Filtro de Cabine 335,1514.72,15
+336,Parachoque Dianteiro 336,2736.51,36
+337,Bomba de Combustível 337,1159.52,45
+338,Interruptor de Luz de Freio 338,3582.13,9
+339,Mangueira do Radiador 339,912.73,12
+340,Módulo de Injeção 340,902.32,33
+341,Interruptor de Ignição 341,866.09,35
+342,Pneu 342,1171.12,10
+343,Escapamento 343,1352.5,29
+344,Mangueira do Radiador 344,315.0,8
+345,Motor de Partida 345,3046.56,39
+346,Condensador 346,4023.05,12
+347,Motor de Partida 347,3286.23,14
+348,Escapamento 348,3178.58,5
+349,Farol Dianteiro 349,696.72,37
+350,Parachoque Dianteiro 350,2610.15,36
+351,Parachoque Dianteiro 351,2895.66,27
+352,Bicos Injetores 352,4903.65,29
+353,Módulo de Injeção 353,2769.15,50
+354,Sensor de Oxigênio 354,3116.37,49
+355,Bicos Injetores 355,4710.0,8
+356,Filtro de Ar 356,2358.29,9
+357,Filtro de Óleo 357,3387.86,3
+358,Módulo de Injeção 358,1641.8,46
+359,Pastilha de Freio 359,3824.6,19
+360,Disco de Freio 360,1204.31,4
+361,Filtro de Óleo 361,1959.56,20
+362,Motor de Partida 362,174.24,3
+363,Farol Dianteiro 363,2766.77,32
+364,Chicote Elétrico 364,461.25,19
+365,Bicos Injetores 365,848.1,16
+366,Filtro de Cabine 366,3461.88,25
+367,Correia Dentada 367,3439.24,32
+368,Sensor de Pressão 368,2152.26,37
+369,Sensor de Posição 369,3827.29,19
+370,Compressor de Ar Condicionado 370,1513.23,2
+371,Sensor ABS 371,4029.97,10
+372,Lanterna Traseira 372,1354.89,19
+373,Sensor de Oxigênio 373,4580.36,42
+374,Reservatório de Expansão 374,2656.44,19
+375,Radiador 375,1240.61,32
+376,Bomba de Combustível 376,1378.82,28
+377,Correia Alternador 377,1658.52,39
+378,Parabrisa 378,632.18,44
+379,Suspensão Dianteira 379,305.8,49
+380,Volante do Motor 380,3425.11,31
+381,Condensador 381,1860.37,25
+382,Sensor de Temperatura 382,2274.31,34
+383,Bomba de Combustível 383,3874.76,2
+384,Catalisador 384,1436.5,48
+385,Sensor de Posição 385,2872.93,2
+386,Amortecedor 386,4137.79,38
+387,Suspensão Dianteira 387,2028.15,20
+388,Coxim do Motor 388,2744.78,10
+389,Radiador do Ar Condicionado 389,1843.58,48
+390,Alternador 390,4645.9,46
+391,Bicos Injetores 391,735.76,40
+392,Suspensão Traseira 392,4090.79,38
+393,Mangueira do Radiador 393,2841.86,18
+394,Sensor de Oxigênio 394,4163.08,27
+395,Correia Dentada 395,708.72,50
+396,Pneu 396,3845.08,12
+397,Sensor de Posição 397,2875.0,27
+398,Parabrisa 398,3562.31,28
+399,Velas de Ignição 399,3712.14,18
+400,Radiador 400,953.12,36
+401,Sensor ABS 401,2358.27,8
+402,Filtro de Ar 402,3850.3,9
+403,Correia Alternador 403,1337.24,16
+404,Suspensão Dianteira 404,2629.64,8
+405,Filtro de Ar 405,1129.37,4
+406,Pastilha de Freio 406,3063.98,45
+407,Interruptor de Luz de Freio 407,3900.74,21
+408,Compressor de Ar Condicionado 408,1419.38,41
+409,Suspensão Dianteira 409,3549.69,43
+410,Sensor de Oxigênio 410,911.27,1
+411,Sensor ABS 411,4875.09,23
+412,Mangueira do Radiador 412,1162.84,35
+413,Sensor de Temperatura 413,3557.55,18
+414,Suspensão Traseira 414,3474.52,17
+415,Bomba Hidráulica 415,336.75,8
+416,Bomba D'água 416,4771.45,8
+417,Bomba de Combustível 417,4473.38,7
+418,Correia Dentada 418,3402.42,3
+419,Condensador 419,1278.37,48
+420,Motor de Partida 420,3892.21,46
+421,Bicos Injetores 421,3348.75,43
+422,Catalisador 422,2079.2,22
+423,Sensor de Oxigênio 423,4424.69,44
+424,Estepe 424,1695.57,40
+425,Sensor ABS 425,2900.32,28
+426,Volante do Motor 426,4760.84,5
+427,Bomba de Combustível 427,4415.05,48
+428,Bateria 428,3584.4,19
+429,Sensor ABS 429,4975.44,21
+430,Disco de Freio 430,4915.67,10
+431,Kit Embreagem 431,2060.98,14
+432,Condensador 432,367.09,45
+433,Coxim do Motor 433,3803.78,38
+434,Cilindro Mestre de Freio 434,4868.2,49
+435,Kit Embreagem 435,890.89,6
+436,Sensor de Pressão 436,1607.71,4
+437,Radiador do Ar Condicionado 437,3290.32,5
+438,Lanterna Traseira 438,4710.11,7
+439,Radiador do Ar Condicionado 439,4696.05,32
+440,Sensor de Posição 440,3670.1,5
+441,Volante do Motor 441,4959.97,7
+442,Reservatório de Expansão 442,2173.45,40
+443,Amortecedor 443,2406.41,28
+444,Reservatório de Expansão 444,1721.68,46
+445,Sensor de Oxigênio 445,4450.74,46
+446,Filtro de Combustível 446,1519.13,34
+447,Suspensão Dianteira 447,223.45,40
+448,Filtro de Combustível 448,3432.16,41
+449,Bomba Hidráulica 449,1351.94,46
+450,Estepe 450,2181.34,21
+451,Chicote Elétrico 451,300.26,34
+452,Suspensão Dianteira 452,3767.76,46
+453,Módulo de Injeção 453,4051.46,15
+454,Escapamento 454,91.72,4
+455,Mangueira do Radiador 455,4385.76,42
+456,Sensor de Pressão 456,4613.05,25
+457,Bateria 457,1981.27,38
+458,Filtro de Ar 458,1057.14,21
+459,Velas de Ignição 459,3743.03,46
+460,Bateria 460,2869.87,27
+461,Interruptor de Luz de Freio 461,1179.09,38
+462,Lanterna Traseira 462,1433.37,41
+463,Sensor de Temperatura 463,3214.97,6
+464,Sensor de Oxigênio 464,3175.55,1
+465,Compressor de Ar Condicionado 465,3653.93,37
+466,Radiador do Ar Condicionado 466,171.05,23
+467,Parachoque Traseiro 467,1671.45,32
+468,Disco de Freio 468,2316.21,39
+469,Parabrisa 469,2183.94,1
+470,Alternador 470,3869.19,4
+471,Bomba Hidráulica 471,1853.79,29
+472,Disco de Freio 472,1223.96,21
+473,Catalisador 473,3817.43,24
+474,Bicos Injetores 474,3940.46,18
+475,Coxim do Motor 475,3788.34,34
+476,Sensor de Pressão 476,1959.99,46
+477,Filtro de Cabine 477,4591.0,20
+478,Retrovisor 478,183.07,33
+479,Bomba Hidráulica 479,1756.06,15
+480,Chicote Elétrico 480,831.33,49
+481,Sensor de Oxigênio 481,4899.51,39
+482,Filtro de Ar 482,4390.21,36
+483,Filtro de Ar 483,3337.7,3
+484,Radiador 484,1396.1,10
+485,Parachoque Dianteiro 485,2366.59,23
+486,Correia Dentada 486,3183.24,42
+487,Chicote Elétrico 487,3686.12,42
+488,Bicos Injetores 488,1853.88,24
+489,Filtro de Combustível 489,1022.89,32
+490,Suspensão Traseira 490,2227.75,1
+491,Radiador do Ar Condicionado 491,3403.57,31
+492,Retrovisor 492,3790.94,18
+493,Pastilha de Freio 493,3849.54,15
+494,Estepe 494,4638.04,42
+495,Sensor de Temperatura 495,1365.13,38
+496,Pneu 496,3665.11,41
+497,Retrovisor 497,2970.8,23
+498,Filtro de Ar 498,2234.86,45
+499,Motor de Partida 499,3950.5,45
+500,Sensor de Pressão 500,1378.62,47
+501,Catalisador 501,3296.33,29
+502,Filtro de Cabine 502,3255.37,25
+503,Sensor de Posição 503,2430.14,46
+504,Filtro de Cabine 504,592.34,24
+505,Parabrisa 505,2581.99,34
+506,Chicote Elétrico 506,2796.71,30
+507,Escapamento 507,2114.38,39
+508,Chicote Elétrico 508,1137.6,44
+509,Suspensão Traseira 509,3548.35,14
+510,Servo Freio 510,994.57,31
+511,Interruptor de Luz de Freio 511,352.45,42
+512,Bomba Hidráulica 512,3101.41,2
+513,Bomba Hidráulica 513,4964.44,20
+514,Parabrisa 514,3458.2,26
+515,Velas de Ignição 515,1909.36,20
+516,Condensador 516,762.93,7
+517,Radiador do Ar Condicionado 517,4858.22,40
+518,Compressor de Ar Condicionado 518,2060.14,5
+519,Lanterna Traseira 519,1255.56,44
+520,Cilindro Mestre de Freio 520,3609.67,4
+521,Amortecedor 521,362.92,27
+522,Pastilha de Freio 522,1559.75,4
+523,Suspensão Traseira 523,3363.3,12
+524,Filtro de Ar 524,1809.42,41
+525,Lanterna Traseira 525,3410.62,24
+526,Filtro de Combustível 526,766.98,48
+527,Filtro de Óleo 527,146.47,39
+528,Sensor de Temperatura 528,1339.72,32
+529,Radiador 529,3956.88,9
+530,Parabrisa 530,3624.96,17
+531,Filtro de Óleo 531,2494.34,36
+532,Retrovisor 532,3657.63,7
+533,Estepe 533,1586.08,42
+534,Suspensão Dianteira 534,835.32,45
+535,Filtro de Cabine 535,3650.18,18
+536,Bateria 536,877.36,23
+537,Filtro de Ar 537,2401.63,6
+538,Coxim do Motor 538,3113.56,18
+539,Pneu 539,1221.43,9
+540,Coxim do Motor 540,4387.18,30
+541,Catalisador 541,2814.02,29
+542,Pneu 542,4334.83,35
+543,Correia Dentada 543,2937.36,34
+544,Módulo de Injeção 544,2252.52,1
+545,Servo Freio 545,3583.23,20
+546,Suspensão Traseira 546,3989.34,10
+547,Alternador 547,3281.46,29
+548,Sensor de Pressão 548,620.51,11
+549,Lanterna Traseira 549,1522.83,21
+550,Interruptor de Ignição 550,1080.51,24
+551,Mangueira do Radiador 551,661.24,37
+552,Bicos Injetores 552,2488.01,19
+553,Filtro de Óleo 553,1255.76,45
+554,Parachoque Dianteiro 554,4626.22,24
+555,Radiador 555,3814.34,19
+556,Bicos Injetores 556,1341.1,11
+557,Sensor de Oxigênio 557,883.21,6
+558,Pneu 558,4169.87,18
+559,Motor de Partida 559,2634.77,21
+560,Bateria 560,1550.13,48
+561,Estepe 561,1938.45,42
+562,Sensor de Temperatura 562,144.47,5
+563,Chicote Elétrico 563,1849.93,45
+564,Lanterna Traseira 564,1931.88,40
+565,Alternador 565,3512.7,25
+566,Módulo de Injeção 566,3165.19,34
+567,Suspensão Traseira 567,373.85,37
+568,Filtro de Cabine 568,126.37,12
+569,Sensor ABS 569,4984.05,32
+570,Reservatório de Expansão 570,811.45,20
+571,Reservatório de Expansão 571,75.67,27
+572,Compressor de Ar Condicionado 572,1907.68,12
+573,Coxim do Motor 573,1548.76,28
+574,Mangueira do Radiador 574,311.84,30
+575,Radiador 575,2694.82,11
+576,Filtro de Ar 576,3186.95,38
+577,Chicote Elétrico 577,951.63,6
+578,Radiador do Ar Condicionado 578,2228.67,11
+579,Bomba D'água 579,4373.81,3
+580,Parabrisa 580,208.16,35
+581,Parachoque Dianteiro 581,3324.5,35
+582,Sensor ABS 582,3006.59,26
+583,Condensador 583,2407.13,7
+584,Filtro de Óleo 584,2375.62,6
+585,Sensor de Pressão 585,140.11,30
+586,Sensor de Pressão 586,1663.77,19
+587,Parachoque Traseiro 587,3608.34,41
+588,Bomba de Combustível 588,1531.23,5
+589,Reservatório de Expansão 589,4464.51,5
+590,Suspensão Traseira 590,357.9,37
+591,Suspensão Dianteira 591,3415.33,39
+592,Velas de Ignição 592,1460.04,26
+593,Estepe 593,4980.91,10
+594,Filtro de Cabine 594,3465.71,16
+595,Reservatório de Expansão 595,3461.13,7
+596,Correia Alternador 596,3522.69,41
+597,Lanterna Traseira 597,4521.02,27
+598,Chicote Elétrico 598,3709.5,6
+599,Pastilha de Freio 599,700.23,43
+600,Correia Alternador 600,951.93,44
+601,Bomba de Combustível 601,2062.97,50
+602,Parachoque Traseiro 602,68.55,14
+603,Filtro de Ar 603,690.31,11
+604,Sensor de Oxigênio 604,1870.84,5
+605,Filtro de Óleo 605,681.5,5
+606,Kit Embreagem 606,215.24,37
+607,Interruptor de Luz de Freio 607,2020.94,34
+608,Interruptor de Ignição 608,1786.52,46
+609,Pastilha de Freio 609,3991.36,26
+610,Bomba D'água 610,1959.82,37
+611,Sensor de Temperatura 611,1761.73,3
+612,Escapamento 612,4161.22,48
+613,Farol Dianteiro 613,4422.99,8
+614,Filtro de Ar 614,2843.96,1
+615,Coxim do Motor 615,4162.78,48
+616,Velas de Ignição 616,1954.24,19
+617,Alternador 617,1945.78,3
+618,Sensor de Pressão 618,1397.82,17
+619,Kit Embreagem 619,1719.61,39
+620,Alternador 620,858.35,27
+621,Correia Dentada 621,394.9,8
+622,Pastilha de Freio 622,1653.18,33
+623,Disco de Freio 623,2011.91,12
+624,Parabrisa 624,2689.55,47
+625,Filtro de Ar 625,4111.59,33
+626,Correia Dentada 626,532.25,28
+627,Alternador 627,3151.07,6
+628,Motor de Partida 628,4268.14,15
+629,Filtro de Óleo 629,3835.54,17
+630,Velas de Ignição 630,168.83,6
+631,Escapamento 631,1465.74,11
+632,Sensor de Oxigênio 632,3392.71,46
+633,Sensor ABS 633,4969.06,1
+634,Filtro de Cabine 634,4379.96,47
+635,Condensador 635,1085.22,44
+636,Filtro de Ar 636,2802.74,26
+637,Pneu 637,1623.92,38
+638,Interruptor de Luz de Freio 638,4770.4,19
+639,Compressor de Ar Condicionado 639,3998.59,13
+640,Cilindro Mestre de Freio 640,1996.35,26
+641,Pneu 641,2477.8,5
+642,Módulo de Injeção 642,1070.93,23
+643,Bicos Injetores 643,2110.23,50
+644,Sensor de Pressão 644,847.3,41
+645,Alternador 645,4241.8,20
+646,Sensor ABS 646,2108.55,35
+647,Radiador 647,2809.94,6
+648,Condensador 648,536.14,20
+649,Sensor de Temperatura 649,4378.14,37
+650,Sensor ABS 650,4267.75,5
+651,Motor de Partida 651,1731.92,47
+652,Parachoque Traseiro 652,2027.6,37
+653,Sensor de Posição 653,2383.81,35
+654,Estepe 654,1357.14,35
+655,Farol Dianteiro 655,51.81,24
+656,Suspensão Dianteira 656,2007.37,21
+657,Parachoque Dianteiro 657,4710.29,11
+658,Sensor de Posição 658,838.02,31
+659,Pneu 659,288.56,42
+660,Compressor de Ar Condicionado 660,4637.86,45
+661,Correia Dentada 661,1629.57,29
+662,Suspensão Dianteira 662,2597.25,43
+663,Escapamento 663,2293.58,35
+664,Condensador 664,218.36,47
+665,Farol Dianteiro 665,1151.7,48
+666,Sensor de Oxigênio 666,2039.27,7
+667,Cilindro Mestre de Freio 667,1707.42,18
+668,Bomba Hidráulica 668,2728.68,9
+669,Condensador 669,3909.97,23
+670,Bicos Injetores 670,1881.37,3
+671,Farol Dianteiro 671,4164.81,26
+672,Interruptor de Ignição 672,4462.05,43
+673,Bateria 673,2442.51,39
+674,Catalisador 674,121.75,44
+675,Motor de Partida 675,2698.21,2
+676,Bomba de Combustível 676,3267.43,9
+677,Radiador 677,3417.28,2
+678,Interruptor de Ignição 678,3001.21,37
+679,Motor de Partida 679,3855.23,11
+680,Escapamento 680,619.98,44
+681,Motor de Partida 681,4168.78,27
+682,Velas de Ignição 682,2800.52,25
+683,Parachoque Dianteiro 683,1861.01,17
+684,Bomba de Combustível 684,1880.85,24
+685,Reservatório de Expansão 685,1967.67,9
+686,Compressor de Ar Condicionado 686,1095.49,48
+687,Coxim do Motor 687,4479.74,1
+688,Filtro de Ar 688,1943.76,32
+689,Sensor de Pressão 689,1485.81,40
+690,Suspensão Dianteira 690,3054.9,33
+691,Kit Embreagem 691,110.37,42
+692,Cilindro Mestre de Freio 692,348.25,13
+693,Pneu 693,245.55,15
+694,Velas de Ignição 694,2981.46,15
+695,Suspensão Dianteira 695,1340.1,37
+696,Velas de Ignição 696,4144.42,36
+697,Velas de Ignição 697,101.0,25
+698,Velas de Ignição 698,1557.0,13
+699,Compressor de Ar Condicionado 699,2375.59,27
+700,Sensor de Posição 700,334.98,1
+701,Cilindro Mestre de Freio 701,2784.7,50
+702,Farol Dianteiro 702,4643.32,9
+703,Correia Alternador 703,3907.38,40
+704,Mangueira do Radiador 704,1071.38,37
+705,Pastilha de Freio 705,2900.81,43
+706,Volante do Motor 706,3691.71,12
+707,Reservatório de Expansão 707,1088.21,23
+708,Escapamento 708,238.65,1
+709,Velas de Ignição 709,4712.6,45
+710,Pneu 710,168.98,29
+711,Kit Embreagem 711,3487.58,8
+712,Chicote Elétrico 712,1573.92,30
+713,Catalisador 713,2315.38,2
+714,Parachoque Dianteiro 714,397.36,41
+715,Parachoque Traseiro 715,3682.68,9
+716,Lanterna Traseira 716,1336.23,2
+717,Compressor de Ar Condicionado 717,4423.04,25
+718,Reservatório de Expansão 718,4124.85,28
+719,Velas de Ignição 719,1173.18,47
+720,Filtro de Ar 720,2522.44,36
+721,Cilindro Mestre de Freio 721,4102.83,25
+722,Filtro de Combustível 722,2004.11,46
+723,Bateria 723,3943.1,50
+724,Correia Alternador 724,3136.58,47
+725,Lanterna Traseira 725,1277.02,16
+726,Kit Embreagem 726,2840.33,4
+727,Sensor de Posição 727,4770.75,43
+728,Suspensão Dianteira 728,75.18,22
+729,Retrovisor 729,545.55,4
+730,Sensor de Pressão 730,4465.91,40
+731,Bomba D'água 731,4929.89,14
+732,Parachoque Traseiro 732,4861.09,29
+733,Bomba Hidráulica 733,2672.23,46
+734,Pastilha de Freio 734,4132.17,41
+735,Escapamento 735,1468.12,9
+736,Interruptor de Ignição 736,1107.84,48
+737,Bomba D'água 737,4319.92,17
+738,Retrovisor 738,1298.63,37
+739,Bomba D'água 739,1721.68,1
+740,Sensor de Posição 740,324.3,9
+741,Suspensão Traseira 741,197.85,3
+742,Sensor de Posição 742,3926.4,5
+743,Kit Embreagem 743,3945.27,12
+744,Disco de Freio 744,255.46,1
+745,Kit Embreagem 745,1482.94,28
+746,Compressor de Ar Condicionado 746,2019.39,42
+747,Radiador do Ar Condicionado 747,2672.23,32
+748,Sensor de Pressão 748,453.4,9
+749,Cilindro Mestre de Freio 749,2339.15,14
+750,Cilindro Mestre de Freio 750,2955.38,18
+751,Compressor de Ar Condicionado 751,4446.47,40
+752,Motor de Partida 752,3899.92,24
+753,Motor de Partida 753,3887.94,37
+754,Filtro de Cabine 754,4193.74,45
+755,Retrovisor 755,2649.55,10
+756,Catalisador 756,2594.69,45
+757,Correia Dentada 757,2117.42,25
+758,Correia Alternador 758,4174.68,6
+759,Escapamento 759,764.04,48
+760,Disco de Freio 760,4713.27,47
+761,Bateria 761,1608.21,16
+762,Condensador 762,2962.27,34
+763,Parachoque Dianteiro 763,4112.74,37
+764,Bomba Hidráulica 764,1482.92,22
+765,Lanterna Traseira 765,314.53,30
+766,Sensor de Posição 766,1790.69,35
+767,Alternador 767,672.86,16
+768,Coxim do Motor 768,1833.01,29
+769,Farol Dianteiro 769,3511.21,8
+770,Sensor de Pressão 770,3665.51,38
+771,Sensor de Oxigênio 771,2804.51,13
+772,Filtro de Ar 772,300.57,13
+773,Lanterna Traseira 773,3918.86,45
+774,Bateria 774,3779.13,31
+775,Chicote Elétrico 775,2977.9,31
+776,Radiador 776,97.54,47
+777,Bomba D'água 777,495.03,22
+778,Parachoque Dianteiro 778,3613.37,10
+779,Farol Dianteiro 779,3846.88,45
+780,Parabrisa 780,4607.54,15
+781,Amortecedor 781,375.67,17
+782,Lanterna Traseira 782,3094.75,1
+783,Sensor de Posição 783,702.8,2
+784,Sensor de Posição 784,4592.5,34
+785,Módulo de Injeção 785,3983.65,16
+786,Sensor de Oxigênio 786,844.8,50
+787,Amortecedor 787,1806.19,37
+788,Radiador 788,3833.26,10
+789,Kit Embreagem 789,1168.11,21
+790,Sensor de Oxigênio 790,1947.92,31
+791,Disco de Freio 791,2511.82,30
+792,Interruptor de Ignição 792,1071.13,29
+793,Compressor de Ar Condicionado 793,3242.77,20
+794,Condensador 794,3199.62,44
+795,Coxim do Motor 795,4001.79,35
+796,Bicos Injetores 796,970.93,15
+797,Módulo de Injeção 797,4092.47,50
+798,Chicote Elétrico 798,1073.33,26
+799,Bomba D'água 799,3950.87,40
+800,Correia Alternador 800,4075.76,8

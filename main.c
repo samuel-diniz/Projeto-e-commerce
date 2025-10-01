@@ -63,7 +63,9 @@ Produto* buscarPorCodigo(No* raiz, int codigo){
 void listarProduto(No* raiz){
     if (raiz != NULL){
         listarProduto(raiz->esq);
-        printf("Código: %d\n", raiz->item.codigo);
+        printf("Codigo: %d | Nome: %s | Preco: %.2f | Quantidade: %d\n", 
+            raiz->item.codigo, raiz->item.nome,
+        raiz->item.preco, raiz->item.quantidade);
         listarProduto(raiz->dir);
     }
 }
@@ -91,8 +93,42 @@ void devolverProduto(No*arvoreCodigo, No** carrinho, int codigo){
     }
 }
 
-void gerarNome(char* nome, int id){
-    sprintf(nome, "Produto_%d", id);
+void importarProdutos(const char *nomeArquivo, No **arvoreCodigo, No **arvorePreco){ 
+    FILE *fp = fopen(nomeArquivo, "r"); 
+    if (!fp){ 
+        perror("Erro abrindo arquivo CSV"); 
+        return; 
+    }
+
+    char linha[256];
+    fgets(linha, sizeof(linha), fp);
+
+    while (fgets(linha,sizeof(linha), fp)){
+        Produto p;
+        char *token;
+        linha[strcspn(linha, "\n")] = 0;
+
+        token = strtok(linha, ",");
+        if (token == NULL) continue;
+        p.codigo = atoi(token);
+
+        token = strtok(NULL, ",");
+        if (token == NULL) continue;
+        strncpy(p.nome, token, 49);
+        p.nome[49] = '\0';
+
+        token = strtok(NULL, ",");
+        if (token == NULL) continue;
+        p.preco = atof(token);
+
+        token = strtok(NULL, ",");
+        if (token == NULL) continue;
+        p.quantidade = atoi(token);
+
+        *arvoreCodigo = inserirPorCodigo(*arvoreCodigo, p);
+        *arvorePreco = inserirPorPreco(*arvorePreco, p);
+    }
+    fclose(fp);
 }
 
 int main(){
@@ -100,8 +136,9 @@ int main(){
     srand(time(NULL)); 
 
     No *arvoreCodigo = NULL, *arvorePreco = NULL, *carrinho = NULL;
-    int totalProdutos = 10000;
+    int totalProdutos = 800;
 
+    /*
     for (int i = 1; i <= totalProdutos; i++) {
         char nome[50];
         gerarNome(nome, i);
@@ -116,9 +153,15 @@ int main(){
         
         arvoreCodigo = inserirPorCodigo(arvoreCodigo, p);
         arvorePreco = inserirPorPreco(arvorePreco, p);
-    }
+    } */
+
+    importarProdutos("C:\\Users\\cdcon\\ProjetoUnicid\\produtos_pecas_carro.csv", &arvoreCodigo, &arvorePreco);
+
     printf("Altura da arvore por codigo: %d\n", altura(arvoreCodigo));
     printf("Altura da arvore por preco: %d\n",altura(arvorePreco));
+
+    printf("\n--- Lista de Produtos (Ordenada por codigo) ---\n");
+    listarProduto(arvoreCodigo);
 
     for (int i = 0; i < 500; i++){
         int codigoCompra = rand() % totalProdutos + 1;
@@ -126,6 +169,9 @@ int main(){
     }
     
     printf("Altura da arvore do carrinho: %d\n", altura(carrinho));
+
+    printf("\n--- Conteudo do Carrinho ---\n");
+    listarProduto(carrinho);
 
     return 0;
 }
