@@ -67,15 +67,39 @@ int altura(No* raiz) {
     return (altEsq > altDir ? altEsq : altDir) + 1;
 }
 
-void listarProduto(No* raiz) {
-    if (raiz != NULL) {
-        listarProduto(raiz->esq);
-        printf("Codigo: %d | Nome: %s | Preco: R$ %.2f | Quantidade: %d\n",
-            raiz->item.codigo, raiz->item.nome,
-            raiz->item.preco, raiz->item.quantidade);
-        listarProduto(raiz->dir);
+void listarProdutoPaginado(No* raiz, int *contador, int *continuar) {
+    if (raiz == NULL || *continuar == 0) return;
+
+    listarProdutoPaginado(raiz->esq, contador, continuar);
+
+    if (*continuar == 0) return;
+
+    (*contador)++;
+    printf("Codigo: %d | Nome: %s | Preco: R$ %.2f | Quantidade: %d\n",
+           raiz->item.codigo, raiz->item.nome,
+           raiz->item.preco, raiz->item.quantidade);
+
+    if (*contador % 200 == 0) {
+        char opcao;
+        printf("\n-- Mostrados %d produtos. Deseja ver mais? (s/n): ", *contador);
+        scanf(" %c", &opcao);
+        if (opcao != 's' && opcao != 'S') {
+            *continuar = 0;
+            return;
+        }
+        printf("\n");
     }
+
+    listarProdutoPaginado(raiz->dir, contador, continuar);
 }
+
+void listarProdutos(No* raiz) {
+    int contador = 0;
+    int continuar = 1;
+    listarProdutoPaginado(raiz, &contador, &continuar);
+    printf("\nTotal de produtos listados: %d\n", contador);
+}
+
 
 void comprarProduto(No** arvoreCodigo, No** carrinho, int codigo) {
     Produto* p = buscarPorCodigo(*arvoreCodigo, codigo);
@@ -137,6 +161,8 @@ void devolverProduto(No** arvoreCodigo, No** carrinho, int codigo) {
     }
 }
 
+void embaralhar(Produto produtos[], int n);
+
 void importarProdutos(const char *nomeArquivo, No **arvoreCodigo, No **arvorePreco) {
     FILE *fp = fopen(nomeArquivo, "r");
     if (!fp) {
@@ -144,10 +170,28 @@ void importarProdutos(const char *nomeArquivo, No **arvoreCodigo, No **arvorePre
         return;
     }
 
+    Produto *produtos = NULL;
+    int contador = 0;
+
     char linha[256];
+    fgets(linha, sizeof(linha), fp);
+    
+    while (fgets(linha, sizeof(linha), fp)) {
+        contador++;
+    }
+    rewind(fp); 
     fgets(linha, sizeof(linha), fp); 
 
-    while (fgets(linha, sizeof(linha), fp)) {
+    
+    produtos = (Produto*) malloc(contador * sizeof(Produto));
+    if (produtos == NULL) {
+        perror("Erro de alocacao de memoria");
+        fclose(fp);
+        return;
+    }
+
+    int i = 0;
+    while (fgets(linha, sizeof(linha), fp) && i < contador) {
         Produto p;
         char *token;
         linha[strcspn(linha, "\n")] = 0;
@@ -169,10 +213,29 @@ void importarProdutos(const char *nomeArquivo, No **arvoreCodigo, No **arvorePre
         if (token == NULL) continue;
         p.quantidade = atoi(token);
 
-        *arvoreCodigo = inserirPorCodigo(*arvoreCodigo, p);
-        *arvorePreco = inserirPorPreco(*arvorePreco, p);
+        produtos[i++] = p;
     }
     fclose(fp);
+
+    embaralhar(produtos, contador);
+
+    for (i = 0; i < contador; i++){
+        *arvoreCodigo = inserirPorCodigo(*arvoreCodigo, produtos[i]);
+        *arvorePreco = inserirPorPreco(*arvorePreco, produtos[i]);
+    }
+
+    free(produtos);
+}
+
+void embaralhar(Produto produtos[], int n) {
+    if (n > 1) {
+        for (int i = 0; i < n - 1; i++) {
+            int j = i + rand() / (RAND_MAX / (n - i) + 1);
+            Produto temp = produtos[j];
+            produtos[j] = produtos[i];
+            produtos[i] = temp;
+        }
+    }
 }
 
 int main() {
@@ -181,7 +244,7 @@ int main() {
 
     No *arvoreCodigo = NULL, *arvorePreco = NULL, *carrinho = NULL;
 
-    importarProdutos("C:\\Users\\cdcon\\ProjetoUnicid\\produtos_pecas_carro.csv", &arvoreCodigo, &arvorePreco);
+    importarProdutos("C:\\Users\\cdcon\\ProjetoUnicid\\produtos_reais_10000_sem_acentos.csv", &arvoreCodigo, &arvorePreco);
 
     int opcao, codigo;
 
@@ -200,7 +263,7 @@ int main() {
         switch(opcao) {
             case 1:
                 printf("--- Produtos disponiveis ---\n");
-                listarProduto(arvoreCodigo);
+                listarProdutos(arvoreCodigo);
                 break;
 
             case 2:
@@ -211,7 +274,7 @@ int main() {
 
             case 3:
                 printf("--- Carrinho ---\n");
-                listarProduto(carrinho);
+                listarProdutos(carrinho);
                 break;
 
             case 4:
